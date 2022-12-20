@@ -55,7 +55,7 @@ class ScrapServeice(Scrap):
         arg.dataframe_to_csv("results.csv")
 
     def naver_movie_review(self):
-        if os.path.isfile(savepath):
+        if os.path.isfile(savepath): # 파일유뮤 확인 코드
             naver_csv = pd.read_csv(savepath, header=None, index_col=0)
             print(naver_csv.index[0])
             return naver_csv.index[0]

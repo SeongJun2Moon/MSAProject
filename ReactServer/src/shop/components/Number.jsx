@@ -13,7 +13,7 @@ const Number = () => {
 
   const onGetClick = (e) => {
     e.preventDefault();
-    alert(`인식 한 숫자 : ${JSON.stringify(Num)}`);
+    alert(`인식 한 숫자 : ${JSON.stringify(Num)}`); //Num을 JSON 형식으로 변환
     getnumber(Num)
       .then((response) => {
         console.log(`response is ${response.data.result}`);

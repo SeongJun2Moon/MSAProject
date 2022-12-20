@@ -10,13 +10,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\webcrawler\save\melon_results.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\webcrawler\save\naver.csv">
           <value>
             <Attribute>
