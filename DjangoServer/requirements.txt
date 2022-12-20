@@ -40,3 +40,5 @@ urllib3==1.25.10
 Werkzeug==1.0.1
 wincertstore==0.2
 torch
+IPython
+dlib

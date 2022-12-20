@@ -23,4 +23,6 @@ urlpatterns = [
     path("stroke/", include("blog.stroke.urls")),
     path("shop/iris/", include("shop.iris.urls")),
     path("shop/fashion", include("shop.fashion.urls")),
+    path("shop/number", include("shop.number.url")),
+    path("webcrawler", include("webcrawler.urls")),
 ]
