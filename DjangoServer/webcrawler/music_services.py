@@ -29,10 +29,9 @@ class Scrap:
         self.df = pd.DataFrame.from_dict(self.diction, orient='index') #orient='index'는 index를 자동 선언
 
 
-
     def dataframe_to_csv(self, fname):
         path = context+fname
-        self.df.to_csv(path, sep=',', na_rep="NaN", header=None)
+        self.df.to_csv(path, sep=',', na_rep="NaN", header=False)
 
 def BugsMusic(arg):
     soup = BeautifulSoup(urlopen(arg.domain + arg.query_string), arg.parser)

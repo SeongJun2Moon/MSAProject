@@ -1,9 +1,7 @@
-import urllib
 
-from urllib.request import urlopen
 
 import pandas as pd
-from bs4 import BeautifulSoup
+
 from isort._future._dataclasses import dataclass
 
 
