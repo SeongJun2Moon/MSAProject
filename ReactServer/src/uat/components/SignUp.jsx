@@ -1,28 +1,23 @@
-import '../styles/SignUp.css'
-import { useState } from "react"
-import { userLoginApi } from '../api'
-
+import "../styles/SignUp.css";
 
 const SignUp = () => {
+  const onClick = (e) => {
+    e.preventDefault();
+    return;
+  };
 
-    const onClick = (e) => {
-        e.preventDefault()
-        return 
-    }
-
-
-    return (
+  return (
     <>
-        <h2>회원가입</h2>
-        <button onClick={onClick}> 회원가입 </button><br/>
-        <p>100명 등록해버리기</p>
-        {}
+      <h2>회원가입</h2>
+      <button onClick={onClick}> 회원가입 </button>
+      <br />
+      <p>100명 등록해버리기</p>
+      {}
     </>
-    )
-}
-    
+  );
+};
 
-export default SignUp
+export default SignUp;
 
 // const [inputs, setInputs] = useState({})
 // const {email, password, nickname} = inputs;

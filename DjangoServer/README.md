@@ -9,7 +9,7 @@
 
 ## 코드 내 이론
 ### blog
-- <a href="https://github.com/SeongJun2Moon/MSAProject/tree/main/DjangoServer/blog/코드내이론.md">blog</a>
+- <a href="https://github.com/SeongJun2Moon/MSAProject/tree/main/DjangoServer/blog/busers/랜덤유저df를mysql로보내기.md">db로 데이터프레임 보내기</a>
 ### movie
 - <a href="https://github.com/SeongJun2Moon/MSAProject/tree/main/DjangoServer/movie/코드내이론.md">movie</a>
 ### shop
