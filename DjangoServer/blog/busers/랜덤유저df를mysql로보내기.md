@@ -22,6 +22,6 @@
 - df.to_sql(name='[테이블이름]', con=db_connection, if_exists='[추가/교체]', index=False)
 
 ### 오류
-버전오류 : pip install --upgrade sqlalchemy
-pymysql.err.OperationalError - 1054 : if_exists='replace' - 테이블이 비어있거나 키값이 다를 때
-sqlalchemy.exc.IntegrityError - 1217 : if_exists='append' - 온전한 테이블에 내용을 추가할 때
+- 버전오류 : pip install --upgrade sqlalchemy
+- pymysql.err.OperationalError - 1054 : if_exists='replace' - 테이블이 비어있거나 키값이 다를 때
+- sqlalchemy.exc.IntegrityError - 1217 : if_exists='append' - 온전한 테이블에 내용을 추가할 때
