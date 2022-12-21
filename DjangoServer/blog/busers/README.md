@@ -1,4 +1,4 @@
-# 데이터프레임 mysql로 보내기
+# 데이터프레임 mysql로 보내기 - busers.service.py
 ### db연결 라이브러리 설치
 1. sqlalchemy
    - 라이브러리 설치 : pip install sqlalchemy
