@@ -13,8 +13,8 @@ from webcrawler.models import Scrap
 class ScrapServeice(Scrap):
     def __init__(self):
         global driverpath, naver_url, savepath, encoding
-        driverpath = "C:/Users/SJMoon/AIA/MSAProject/DjangoServer/webcrawler/chromedriver.exe"
-        savepath = "C:/Users/SJMoon/AIA/MSAProject/DjangoServer/webcrawler/save/naver.csv"
+        driverpath = "C:/Users/MSJ/AIA/MsaProject/DjangoServer/webcrawler/chromedriver.exe"
+        savepath = "C:/Users/MSJ/AIA/MsaProject/DjangoServer/webcrawler/save/naver.csv"
         naver_url = "https://movie.naver.com/movie/sdb/rank/rmovie.naver"
         encoding = "UTF-8"
 
@@ -57,8 +57,11 @@ class ScrapServeice(Scrap):
     def naver_movie_review(self):
         if os.path.isfile(savepath): # 파일유뮤 확인 코드
             naver_csv = pd.read_csv(savepath, header=None, index_col=0)
-            print(naver_csv.index[0])
-            return naver_csv.index[0]
+            naver_list = list(naver_csv.index)
+            naver_dic = {i: v for i, v in enumerate(naver_list)}
+            naver_df = pd.DataFrame(data = [naver_dic])
+            print(naver_df)
+            return naver_list
         else:
             driver = webdriver.Chrome(driverpath)
             driver.get(naver_url)
@@ -73,8 +76,8 @@ class ScrapServeice(Scrap):
             df.to_csv(savepath, na_rep="NaN", header=None, index=None)
             driver.close()
             naver_csv = pd.read_csv(savepath, header=None, index_col=0)
-            print(naver_csv.index[0])
-            return naver_csv.index[0]
+            print(naver_csv.index)
+            return naver_csv.index
 
         # diction = {}
         # for i, j in enumerate(products):

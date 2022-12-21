@@ -9,7 +9,7 @@ from keras.saving.save import load_model
 class NumberService(object):
 
     def service_model(self, i):
-        model = load_model(os.path.join(os.path.abspath("C:/Users/SJMoon/AIA/MSAProject/DjangoServer/shop/number/save"), "number_model.h5"))
+        model = load_model(os.path.join(os.path.abspath("./shop/number/save/"), "number_model.h5"))
         (x_train, y_train), (x_test, y_test) = mnist.load_data()
         print(y_test)
         predictions = model.predict(x_test)
